@@ -1,0 +1,456 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap");
+
+body {
+  margin: 0;
+  background: linear-gradient(135deg, #4e1307, #334756, #2c394b, #082032);
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  margin: 0;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 10dvh;
+  background-color: #082032;
+  color: #ff4c29;
+  font-family: "Poppins", sans-serif;
+  font-size: x-large;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border-bottom: white 3px dashed;
+}
+.Nav-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.Nav-left > div {
+  margin: 2rem;
+}
+.Nav-right > a {
+  margin: 2rem;
+}
+.Nav-right > a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.Nav-left > a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.Nav-right {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+div {
+  text-align: center;
+}
+#hero {
+  display: flex;
+  flex-direction: column;
+  font-family: "JetBrains Mono", monospace;
+  width: 100%;
+  height: 80vh;
+  align-items: center;
+  justify-content: center;
+  /* background-color: #082032; */
+  background: linear-gradient(135deg, #4e1307, #334756, #2c394b, #082032);
+  /* border: red 2px solid; */
+  /* padding: 8dvh 0; */
+}
+#heading {
+  font-weight: 500;
+  font-size: 3rem;
+  color: #ff4c29;
+  padding: 0;
+}
+#tagLine {
+  font-family: cursive;
+  font-size: 2rem;
+  color: cornsilk;
+  padding: 0;
+  font-weight: 0;
+}
+.text {
+  font-family: "JetBrains Mono", monospace;
+  color: cornsilk;
+  font-size: xx-large;
+  margin-bottom: 2rem;
+}
+#role {
+  color: #ff4c29;
+}
+#unlock {
+  border: cornsilk 2px solid;
+  border-radius: 20px;
+
+  padding: 4px;
+}
+#unlock-button {
+  all: unset;
+  border: #ff4c29 2px solid;
+  border-radius: 20px;
+  color: #ff4c29;
+  background: white;
+  padding: 10px;
+  font-size: x-large;
+  cursor: pointer;
+}
+#foot {
+  display: flex;
+  bottom: 0%;
+  position: fixed;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: large;
+  width: 100%;
+  height: 10dvh;
+  background-color: #082032;
+  color: cornsilk;
+  margin-top: 1rem;
+}
+#heart {
+  color: red;
+}
+
+a {
+  color: #ff4c29;
+  text-decoration: none;
+  transition: 0.5s;
+}
+a:hover {
+  color: #ff4c29;
+  text-decoration: underline;
+  scale: 1.2;
+}
+a:active {
+  color: white;
+}
+.Nav-left > a {
+  margin: 2rem;
+}
+#abtus {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  height: 75vh;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: "JetBrains Mono", monospace;
+}
+
+.image img {
+  width: 200px;
+  height: 250px;
+  border-radius: 25%;
+}
+
+.details h2 {
+  margin-top: 10px;
+  color: #ff4c29;
+}
+
+.details p {
+  margin-bottom: 10px;
+  color: cornsilk;
+}
+.abtusheading {
+  font-weight: 500;
+  font-size: 3rem;
+  color: #ff4c29;
+  background-color: #082032;
+  font-family: "Poppins", sans-serif;
+}
+#problemsContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 20px;
+  height: 40vh;
+}
+#problemsContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  padding: 20px;
+  background: #2c394b;
+  height: max-content;
+  background-repeat: repeat-x;
+}
+
+@media (max-width: 768px) {
+  #problemsContainer {
+    grid-template-columns: 1fr;
+  }
+}
+.card-problem {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+  padding: 20px;
+  background-color: #082032;
+  color: #ff4c29;
+  transition: transform 0.6s;
+}
+.card-problem:hover {
+  transform: scale(0.9);
+  cursor: pointer;
+  border: white 1px solid;
+  box-shadow: 0 0 10px white;
+}
+.card-problem h1:hover {
+  cursor: pointer;
+  text-decoration: underline white;
+}
+
+.card-problem h1 {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.card-problem h2 {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 10px;
+}
+/* loginpage */
+.box {
+  width: 18.75rem;
+  margin: 9.5dvh auto;
+  background: #082032;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "JetBrains Mono", monospace;
+}
+
+.box h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: #ff4c29;
+  font-family: "JetBrains Mono", monospace;
+  text-align: center;
+}
+
+.box .inputBox {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.box .inputBox input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: cornsilk;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid cornsilk;
+  outline: none;
+  background: transparent;
+}
+
+.box .inputBox span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: cornsilk;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.box .inputBox input:focus + span,
+.box .inputBox input:valid + span {
+  transform: translateY(-20px);
+  font-size: 12px;
+  color: cornsilk;
+}
+
+.box .links {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.box .links a {
+  color: cornsilk;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.box .links a:hover {
+  color: #ff4c29;
+  text-decoration: underline;
+}
+
+.box input[type="submit"] {
+  background: #ff4c29;
+  border: none;
+  outline: none;
+  color: #fff;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.box input[type="submit"]:hover {
+  background-color: #8b8b8b;
+  color: #ff4c29;
+}
+/* table css */
+#tableContainer {
+  margin: 20px auto;
+  width: 80%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  text-decoration: bold;
+}
+tr:nth-child(even) {
+  font-family:  "JetBrains Mono", monospace;
+  background: #334756;
+  color: cornsilk;
+}
+tr:nth-child(odd) {
+  font-family:  "JetBrains Mono", monospace;
+  background: black;
+  color: white;
+}
+th {
+  background-color: #ff4c29;
+font-family: "Poppins", sans-serif;
+
+}
+
+/* Responsive Classes */
+@media (max-width: 768px) {
+  .container {
+    height: auto;
+    padding-bottom: 10dvh;
+  }
+
+  #hero {
+    height: auto;
+    padding: 10vh 0;
+  }
+
+  #heading {
+    font-size: 2rem;
+  }
+
+  #tagLine {
+    font-size: 1.5rem;
+  }
+
+  .abtusheading {
+    font-size: 2rem;
+  }
+
+  #problemsContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .card-problem {
+    transform: none;
+  }
+
+  .box {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .box .inputBox {
+    margin-bottom: 20px;
+  }
+
+  .box .inputBox input {
+    margin-bottom: 20px;
+  }
+}
+
+/* extra */
+/* Default Navbar Styles */
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #082032;
+  color: #ff4c29;
+  font-family: "Poppins", sans-serif;
+  font-size: x-large;
+  border-bottom: white 3px dashed;
+}
+
+.Nav-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.Nav-left > div {
+  margin: 2rem;
+}
+
+.Nav-right > a {
+  margin: 2rem;
+}
+
+.menu-icon {
+  display: none;
+  color: #ff4c29;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Media Query for Menu Icon */
+@media (max-width: 787px) {
+  nav {
+    height: 5dvh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+  }
+
+  
+}
