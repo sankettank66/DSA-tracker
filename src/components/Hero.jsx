@@ -40,7 +40,7 @@ function Hero() {
         <div id="hero">
             <div>
                 <h2 id="heading">
-                    DSA Tracker for Platform Preparation<br />
+                    DSA Tracker for Placement Preparation<br />
                     <div id="tagLine">
                         Discover your path to success with DSA Tracker!🔥
                     </div>
